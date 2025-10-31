@@ -1,0 +1,27 @@
+{
+  "name": "blockchainassignment",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.2",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "nanoid": "^5.1.6",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Issue Certificate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Issue Certificate</h1>
+    <p class="small">Server computes a SHA-256 hash from name | idNumber | issueDate.</p>
+
+    <form id="issueForm" class="card" enctype="multipart/form-data">
+      <label>Full name</label>
+      <input name="name" required>
+
+      <div class="row">
+        <div>
+          <label>ID number</label>
+          <input name="idNumber" required>
+        </div>
+        <div>
+          <label>Issue date</label>
+          <input name="issueDate" type="date" required>
+        </div>
+      </div>
+
+      <label>Program</label>
+      <select name="program">
+        <option value="">-- Select Program --</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Software Development">Software Development</option>
+      </select>
+
+      <label>Upload Certificate File (PDF/Image)</label>
+      <input type="file" name="certificateFile" accept=".pdf,.jpg,.jpeg,.png">
+
+      <div class="actions">
+        <button class="btn" type="submit">Save</button>
+        <a class="btn outline btn-back" href="http://127.0.0.1:5500/public/dashboard.html">Back</a>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <script src="ui.js"></script>
+  <script src="issue.js"></script>
+</body>
+</html>

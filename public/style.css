@@ -1,0 +1,153 @@
+/* background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #142850, #000);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.actions {
+  display: block;
+  margin-top: 20px;
+}
+
+
+/* card */
+.card {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 32px;
+  width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.card, .hash, pre {
+  overflow-wrap: anywhere;    
+  word-break: break-word;     
+  white-space: normal;        
+}
+
+
+
+/* Headings */
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background-color: #111;
+  color: #f3f4f6;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background-color: #111;
+  color: #f3f4f6;
+}
+
+input:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+
+/* buttons and more */
+.btn {
+  background: #38bdf8;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 16px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.02);
+}
+
+.btn.outline {
+  background: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+}
+
+.btn.outline:hover {
+  background: rgba(56, 189, 248, 0.2);
+}
+
+.btn-back {
+  display: inline-block;
+  width: auto;              
+  padding: 6px 18px;        
+  font-size: 0.95rem;
+  margin-top: 8px;          
+  align-self: center;      
+}
+
+.card form .btn:first-of-type {
+  margin-top: 14px;   
+}
+
+.btn-back {
+  margin-top: 12px;   
+  display: inline-block;
+}
+
+.logout {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
+
+.logout:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+
+/* txt colors */
+.success { color: #10b981; }
+.error { color: #ef4444; }
+.small { color: #9ca3af; text-align: center; }
+
+/* Layout helpers */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+#result {
+  margin-top: 20px;
+  white-space: pre-wrap;  
+}
